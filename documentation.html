@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        .div_style{
+            float:right;
+            width:87%;
+            color:black;
+            padding-left:80px;
+            padding-right:80px;
+            margin-top:30px;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+<body style="background-color:white;">
+    <div class="header1">
+        <img src="images/imdb_logo.png" alt="rough sketch" width="60" height="60" style="float:left">
+		<label>Documentation</label>
+	</div>
+
+    <div class="sidenav" style="float:left;width:13%">
+        <a href="index.html">Home</a>
+        <a href="data_cleaning.html">Data Cleaning</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="about_us.html">About US</a>
+    </div>
+
+    <div class="div_style">
+        <b style="font-size:20px"><u>Introduction to IMDB Dataset</u></b><br><br>
+
+        <p>Dataset name - IMDB Movies Dataset<br>Dataset Description - This is an IMDB dataset of top 1000 movies and TV shows. The dataset has, 1000 rows and 16 columns 
+        </p>
+
+        <p>The variables of the dataset are as follows - 
+            <br>a) Poster_Link - Link of the poster that imdb using 
+            <br>b) Series_Title = Name of the movie 
+            <br>c) Released_Year - Year at which that movie released 
+            <br>d) Certificate - Certificate earned by that movie 
+            <br>e) Runtime - Total runtime of the movie
+            <br>f) Genre - Genre of the movie 
+            <br>g) IMDB_Rating - Rating of the movie at IMDB site 
+            <br>h) Overview - mini story/ summary 
+            <br>i) Meta_score - Score earned by the movie 
+            <br>j) Director - Name of the Director 
+            <br>k) Star1,Star2,Star3,Star4 - Name of the Stars 
+            <br>l) No_of_votes - Total number of votes 
+            <br>m) Gross - Money earned by that movie
+            </p><br>
+
+        <b style="font-size:20px"><u>Design Process</u></b><br><br>
+
+        <img src="images/image_1.jpg" alt="image1" width="700" height="500"><br><br>
+
+        <p>So, above are two examples, for which we provided an initial and final design. In example 1, finding a relation between income (continuous variable) and genre (categorical variable) was the task. We first decided on a Histogram, but a Line chart instead made more sense plotting. The direct value of income is visible against each genre. Similarly, the questions related to finding top or bottom values against an attribute, Pie chart was the initial choice. But, Word cloud is a much better option. It highlights all the values based on size rather than hovering over.
+        </p><br>
+
+        <img src="images/image_2.jpg" alt="image2" width="700" height="500"><br><br>
+
+        <p>In the above diagram, eg 3, first the distribution of movies wrt release year, we decided on simple text format first. But this is too simple a visualization. Pie chart gave a better visualization for this question. Similarly, in eg 4, when we have multiple categorical values, certificates in this example, side by side bar chart does not provide good visuals. Rather a stacked bar chart is preferred as we can see the comparison.  
+        </p><br>
+
+        <b style="font-size:20px"><u>Rationale of my design choices</u></b> <br><br>
+
+        <p><b>1. IMDB Release Year Analysis</b></p>
+
+        <p>For this analysis, I first considered creating 4 visualizations. The release year was compared with gross income, directors, genre and number of movies. For this, the release years, which ranges from 1920 to 2020, are divided into 5 groups. The size of these bins are 20 years each. The “Group” feature of TABLEAU was used for this. The colors used for all the four plots are simple blue in color. Also, I have used the Color blind theme option available in TABLEAU color tab. We use bar charts, line charts and pie charts here. All the 4 visualizations were then displayed into a single dashboard. The background is subtle in color, so that the plots inside are visible. The dashboard title and chart titles are black in color with size 10, which are proportionate to the plots.</p><br>
+
+        <p><b>2. IMDB Directors Analysis</b></p>
+
+        <p>For analyzing director attributes, I have taken the analysis with IMDB rating, box office collection and type of certificate of movies. This plot is a bit more colorful than the previous one. But all the colors are suitable for colorblind people to view as well. Here the background color of the plots are kept white, as it makes the plot colors more attractive. Here, we make use of word cloud, stacked bar charts. The plots are combined in a Dashboard, and the color chosen is gray, which highlights the entire  Dashboard. The color combinations used for each plot helps to visualize the data very well.
+        </p><br>
+
+        <p><b>3. IMDB Actor Analysis</b></p>
+
+        <p>The actor's analysis was an interesting one. There are 4 columns for this, and these are combined and using python, we create director-actor pairs. This helped understanding which director and actor pair have created most movies together. Total 3 graphs are made on this data attribute, by comparing director with stars, number of votes and box office income. Here we used packed bubbles, text  charts and line charts for visualization.  The colors for the plots are simple and light. The dashboard color is mild. Also, the font size and color is suitable for the charts. 
+        </p><br>
+
+        <p><b>4. IMDB Rating Analysis</b></p>
+
+        <p>The IMDB rating is a very important parameter to make a movie recommendation. The rating ranges from 7.6 and above in this dataset. There are 4 questions answered here, comparing rating with box office collection, certificate, runtime in mins and no of votes. For all these plots, the charts such as bar chart, line chart and bubble chart are considered. Blue color is prominently used across, as this provides good visualization. The background of the Dashboard is light colored too, with good font size and color.</p><br>
+
+        <p><b>5. IMDB Metascore</b></p>
+
+        <p>The IMDB Metascore is the score earned by the movies. This attribute is compared with gross income, no of votes, movies produced and certificates. As you can see in the plots, there are word clouds, bar chart and line chart are used. The colors used are fresh and bright and are visible to color blind people too. This is taken from the color blind color options available on TABLEAU. The dashboard color is light and highlights the plots well. The font size and color and clearly visible .
+        </p><br>
+
+        <p><b>6. IMDB Number of votes</b></p>
+
+        <p>The final dashboard is made with two plots that compare the number of votes with overview of movies attribute and genre. This plot is very interesting as the overview of the movies is a very long string for each movie. The number of words are counted for each overview using PYTHON, and these are then compared in relation with the number of votes. I have used bar charts and line charts for this. The colors used are perfect and highlight the visualization well. The dashboard is light shaded and the title for questions is appropriate and visible well.</p><br>
+    
+        <b style="font-size:20px"><u>Observations</u></b> <br><br>
+    
+        <p><b>Dashboard 1 - IMDB Release Year Analysis</b></p><br>
+    
+        <p>1. Which year range had the highest average gross income for movies?</p>
+
+        <p><b>Release Year 2000-2019, shows the highest average gross income of 78,466,340</b></p><br>
+
+        <p>1.a Which year ranges had the highest gross income, and which directors were responsible for generating the majority of that income within those years?
+        </p>
+    
+        <p><b>Director James Cameron has been making movies since 1980 to 2019 and his average box office income is 503,719,934.
+        </b></p><br>
+
+        <p>1.b Which year ranges had the highest gross income, and which genres were responsible for generating the majority of that income within those years?</p>
+
+        <p><b>The “Family, Sci-Fi” genre has the highest gross income of 435,110,554 in the year 1980-1999</b></p><br>
+
+        <p>1.c What is the distribution of the number of movies released in each group of years?</p>
+
+        <p><b>The highest number of movies was 480, in the years 2000-2019.</b></p><br>
+
+
+
+
+
+
+        <p><b>Dashboard 2 - IMDB Directors Analysis</b></p><br>
+    
+        <p>2. Which director has the highest average box office earnings for their movies, and how does this compare to their average IMDB rating?</p>
+
+        <p><b>Christopher Nolan has the highest gross average income with highest average IMDB rating of 8.45</b></p><br>
+
+        <p>2a Which of the top-rated movies directed by a specific director on IMDb was the most commercially successful?
+
+        </p>
+    
+        <p><b>Peter Jackson, top three movies “The Lord of the Rings” trio series.
+        </b></p><br>
+
+        <p>2. b Which are the top 10 Directors and the type of certificate movies they make?</p>
+
+        <p><b>The top directors are seen in the plot</b></p><br>
+
+
+
+
+
+        <p><b>Dashboard 3 - IMDB Actor Analysis</b></p><br>
+    
+        <p>3. Which are the top 20 actors in terms of the number of movies made and the average gross income earned by those movies?
+        </p>
+
+        <p><b>Top 20 actors and shown and out of which, Robert Downey Jr has appeared in 7 movies and has an highest average gross income of 447,010,463</b></p><br>
+
+        <p>3a. What are the top 20 actors in terms of the number of movies made and the average gross income earned by those movies?
+
+        </p>
+    
+        <p><b>Results shown as per the visualization
+
+        </b></p><br>
+
+        <p>3.b What are the top 10 actors with the least number of votes received for their movies in the given dataset?</p>
+
+        <p><b>The top 10 actors are as per the results shown. Leslie Cheung has the least no of votes received for her movies.</b></p><br>
+
+
+
+
+
+
+        <p><b>Dashboard 4 - IMDB Rating Analysis</b></p><br>
+    
+        <p>4. What are some movies that have received high ratings on IMDB and also achieved significant commercial success at the box office?
+        </p>
+
+        <p><b>The Dark Knight and Lord of the Rings have highest box office success of 534,858,444 and 377,845,905 respectively</b></p><br>
+
+        <p>4a. Does the length of a movie have any correlation with its IMDB rating?
+
+        </p>
+    
+        <p><b>Yes, it does. High average rating has high runtime.
+
+        </b></p><br>
+
+        <p>4b. Does the number of votes a movie receives on IMDB have any association with its rating on the platform?</p>
+
+        <p><b>Results as per the graph.</b></p><br>
+
+        <p>4c. Is there any relationship between No of votes and IMDB rating of movie?
+        </p>
+
+        <p><b>High ranges of IMDB ratings have higher no of votes.</b></p><br>
+
+
+
+
+
+
+
+        <p><b>Dashboard 5 - IMDB Metascore Analysis</b></p><br>
+    
+        <p>5. Is there a correlation between the distribution of a movie's Metascore and the number of votes and the gross income it has received?
+        </p>
+
+        <p><b>Yes there is, there is a direct increasing relation between both the values.</b></p><br>
+
+        <p>5a. Who are the top directors with the highest Metascores?
+
+        </p>
+    
+        <p><b>John Huston is the top actor with metascore of 454.0
+        </b></p><br>
+
+        <p>5b. Is there a relationship between a director's Metascore and the number of movies they have produced over the years, across different genres?
+        </p>
+
+        <p><b>Yes, there is a direct relation.  In our plot we see this for the Drama plot.The metascore decreases with increase in release years. On the other hand, the number of movies increases with the increase in metascores.</b></p><br>
+
+        <p>5c. Which movie certification rating has the highest average Metascore?
+        </p>
+
+        <p><b>TV-PG has the highest rating</b></p><br>
+
+
+
+
+
+
+        <p><b>Dashboard 6 - IMDB No of votes Analysis</b></p><br>
+    
+        <p>6. Is there a correlation between the length of a movie's overview and the number of votes it receives on IMDB?
+
+        </p>
+
+        <p><b>Yes there is a correlation. We can see from the plot that, on an average 25-30 words per overview is something viewers do read about a movie. As the number of words increases, they lose interest and don't read the description. </b></p><br>
+
+        <p>6a.  What is the distribution of box office income across each genre and how does it align with the number of votes from people?
+
+
+        </p>
+    
+        <p><b>The results can be well explained with the graph. 
+        </b></p><br>
+
+
+        <b style="font-size:20px"><u>Youtube Video Link</u></b> <br><br>
+
+        <a href="https://youtu.be/i7AyLV8fqnw">https://youtu.be/i7AyLV8fqnw</a>
+
+        <br>
+        <br>
+    
+    </div>
+
+    
+
+</body>
+</html>

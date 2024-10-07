@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        
+
+        .column {
+            float: left;
+            width: 33.33%;
+            display: flex;
+        }
+
+        .tile-box {
+            float: left;
+            width: 300px;
+            padding: 10px;
+            margin:20px;
+            height: 300px;
+            z-index: 1;
+        }
+
+        .project-1 {
+            background-color: white;
+        }
+
+        .project-2 {
+            background-color:white;
+        }
+
+        .project-3 {
+            background-color:white;
+        }
+
+        .project-4 {
+            background-color:white;
+        }
+
+        .project-5 {
+            background-color:white;
+        }
+
+        .project-6 {
+            background-color:white;
+        }
+        
+        .project-heading {
+            text-align:center;
+            font-size:17px;
+            color:black;
+            font-weight: bold;
+        }
+
+        .project-text {
+            text-align:center;
+            font-size:15px;
+            color:black;
+        }
+
+        .project-button{
+            float:right;
+            background-color: #e8be41;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="header1">
+        <img src="images/imdb_logo.png" alt="rough sketch" width="60" height="60" style="float:left">
+        <label>IMDB Movies</label>	
+    </div>
+
+    <div class="sidenav" style="float:left;width:13%">
+        <a href="index.html">Home</a>
+        <a href="data_cleaning.html">Data Cleaning</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="about_us.html">About US</a>
+    </div>
+
+    
+
+    <div class="image-blurred-edge" style="float:right;width:87%">
+
+        <div class="design_process_div" style="position:absolute;z-index: 1;">
+            <br>
+            <p><b>Welcome to the mesmerizing world of movies, where every frame tells a story and every rating sets the stage for cinematic greatness! Let us take you on a voyage where data and storytelling are intertwined to unlock the secrets hidden within IMDb ratings.</b></p>
+
+            <p style="z-index: 1;"><b>Link of the dataset: <a href="https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows">https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows</a></b></p>
+        
+            <div class="row">
+                
+                <div class="column">
+                    <div class="tile-box project-1">
+                        <h2 class="project-heading">Release year analysis</h2>
+                        <br>
+                        <p class="project-text">The Release Year analysis takes us on a captivating journey through history, shedding light on the societal and cultural influences that have shaped films over the years. Lets see what secrets time unfolds</p>
+                        <br>
+                        <button type="button" class="btn project-button" target="_blank" onclick="#">View Analysis</button>
+                    </div> 
+                </div>
+
+                
+                <div class="column">
+                    <div class="tile-box project-2">
+                        <h2 class="project-heading">Director Analysis</h2>
+                        <br>
+                        <p class="project-text">Through Director analysis, we unveil the secret tapestry woven by these artistic maestros. We delve into their movie ratings, dissect their reviews, and explore the box office performance of their cinematic creations.</p>
+                        <br>
+                        <button type="button" class="btn project-button" target="_blank" onclick="#">View Analysis</button>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="tile-box project-3">
+                        <h2 class="project-heading">Actor Analysis</h2>
+                        <br>
+                        <p class="project-text">Explore the evolution of actors careers through stunning line charts and heat maps. Witness the shifting preferences of audiences, as these charismatic performers adapt and transform, redefining themselves with each new role.</p>
+                        <br>
+                        <button type="button" class="btn project-button" target="_blank" onclick="#">View Analysis</button>
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="tile-box project-4">
+                        <h2 class="project-heading">IMDB Rating Analysis</h2>
+                        <br>
+                        <p class="project-text">Lets unravel the secrets hidden within the ratings, exploring the popularity and success of movies through the eyes of viewers and critics alike. Its a key to unraveling the movie success and understanding audience taste.</p>
+                        <br>
+                        <button type="button" class="btn project-button" target="_blank" onclick="#">View Analysis</button>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="tile-box project-5">
+                        <h2 class="project-heading">Meta Score Analysis</h2>
+                        <br>
+                        <p class="project-text">Through the Meta Score analysis, we delve into a rating system that aggregates the voices of movie critics and publications, distilling their collective wisdom into a score that reflects the overall critical consensus.</p>
+                        <br>
+                        <button type="button" class="btn project-button" target="_blank" onclick="#">View Analysis</button>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="tile-box project-6">
+                        <h2 class="project-heading">Number of Votes Analysis</h2>
+                        <br>
+                        <p class="project-text">Lets peer into the collective voice of the public and the level of audience engagement it generates. By meticulously examining the number of votes a movie receives on IMDb, we unravel fervor with which viewers have embraced it.</p>
+                        <br>
+                        <button type="button" class="btn project-button" target="_blank" onclick="#">View Analysis</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/movie_posters.jpg" class="img_background" alt="">
+    </div>
+</body>
+</html>
