@@ -24,7 +24,7 @@ The IMDB Dataset Analysis Project explores the top 1000 movies and TV shows list
 ## 📊 Dataset Overview
 **Dataset Name**: IMDB Movies Dataset  
 **Description**: This dataset consists of information about the top 1000 movies and TV shows, containing 16 attributes with 1000 rows each.  
-**Data Source**: [IMDB Dataset](https://www.imdb.com)
+**Data Source**: [IMDB Dataset]([https://www.imdb.com](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows))
 
 ### Dataset Variables
 - **Poster_Link**: URL of the movie poster.
@@ -98,11 +98,6 @@ We examined how the length of movie overviews relates to the number of votes a m
 - IMDB ratings have a correlation with runtime and the number of votes.
 - There is a pattern in metascores relating to directors and genres.
 - The length of movie overviews impacts the number of votes received.
-
-## 👥 About Us
-We are a team of data enthusiasts specializing in data cleaning, analysis, and visualization. This project was designed to showcase our skills in exploratory data analysis using Tableau and Python.
-
-For more information or to collaborate, feel free to reach out!
 
 ---
 
