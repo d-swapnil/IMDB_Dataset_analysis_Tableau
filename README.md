@@ -24,7 +24,8 @@ The IMDB Dataset Analysis Project explores the top 1000 movies and TV shows list
 ## 📊 Dataset Overview
 **Dataset Name**: IMDB Movies Dataset  
 **Description**: This dataset consists of information about the top 1000 movies and TV shows, containing 16 attributes with 1000 rows each.  
-**Data Source**: [IMDB Dataset]([https://www.imdb.com](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows))
+**Data Source**: [IMDB Dataset on Kaggle](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows)
+
 
 ### Dataset Variables
 - **Poster_Link**: URL of the movie poster.
